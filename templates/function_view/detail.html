@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Detail</h1>
+    <p><strong>Name : </strong>{{ student.first_name }} {{ student.last_name }}</p>
+    <p>
+        <a href="{% url 'function_view:update' student.id %}">Update</a> |
+        <a href="{% url 'function_view:delete' student.id %}">Delete</a>
+    </p>
+</body>
+</html>
